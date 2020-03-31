@@ -1,0 +1,16 @@
+mysql:
+    container_name: mysqlb
+    image: rafaelviva/mysql:2018-01.19
+    ports:
+       - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+wordpress:
+    container_name: php
+    image: rafaelviva/php
+    volumes:
+      - ./codigo-fonte:/var/www/html
+    ports:
+      - 80:80
+    links:
+      - mysql:db

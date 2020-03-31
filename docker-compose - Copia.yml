@@ -1,0 +1,17 @@
+mysql:
+    container_name: mysql
+    image: rafaelviva/mysql:2017
+    ports:
+       - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+wordpress:
+    container_name: wordpress
+    image: wordpress:4.6
+    volumes:
+      - ./codigo-fonte:/var/www/html 
+    ports:
+      - 80:80
+    links:
+      - mysql:db
+
