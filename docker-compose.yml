@@ -4,7 +4,7 @@ mysql:
     ports:
        - "3306:3306"
     volumes:
-       - ./databases:/var/lib/mysql
+       - ./database:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
 wordpress:
