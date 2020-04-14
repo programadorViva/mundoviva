@@ -3,6 +3,8 @@ mysql:
     image: rafaelviva/mysql:2018-01.19
     ports:
        - "3306:3306"
+    volumes:
+       - ./databases:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
 wordpress:
