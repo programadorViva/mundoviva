@@ -1,6 +1,6 @@
 mysql:
     container_name: mysqlb
-    image: rafaelviva/mysql:2018-01.19
+    image: rafaelviva/mysql:2020-04-14
     ports:
        - "3306:3306"
     volumes:
