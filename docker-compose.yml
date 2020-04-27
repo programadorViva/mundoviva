@@ -2,7 +2,7 @@ mysql:
     container_name: mysqlb
     image: rafaelviva/mysql:2020-04-14
     ports:
-       - "3306:3306"
+       - "3307:3307"
     volumes:
        - ./database:/var/lib/mysql
     environment:
