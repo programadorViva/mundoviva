@@ -1,10 +1,8 @@
 mysql:
     container_name: mysqlb
-    image: rafaelviva/mysql:2020-04-14
+    image: rafaelviva/mysql:2020-04-29
     ports:
        - "3307:3307"
-    volumes:
-       - ./database:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
 wordpress:
