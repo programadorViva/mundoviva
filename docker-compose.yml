@@ -2,7 +2,7 @@ mysql:
     container_name: mysqlb
     image: rafaelviva/mysql:2020-05-15
     ports:
-       - "3306:3306"
+       - "3307:3307"
     environment:
       MYSQL_ROOT_PASSWORD: root
 wordpress:
